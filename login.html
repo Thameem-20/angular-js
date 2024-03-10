@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>Login Page using Angular Js</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     </head>
+    <body ng-app="myApp">
+        <div ng-controller="LoginController">
+            <h2>Login Form</h2>
+            <form name="loginform" novalidate>
+                <label for="username"></label>
+                <input type="text" ng-model="user.username" name="username" required>
+                <br>
+                <label >password</label>
+                <input type="password" ng-model="user.password" required>
+                <br>
+                
+            </form>
+
+        </div>
+        
+    </body>
 </html>
